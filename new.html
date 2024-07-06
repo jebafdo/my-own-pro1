@@ -1,0 +1,50 @@
+<div><h1>calculator</h1>
+   <form id="myform">
+    <input type="number" id="num1">
+    <br><br>
+    <input type="number" id="num2">
+    <br><br>
+    <button onclick="addNumbers()">+</button>
+    <button onclick="subnumbers()">-</button>
+    <button onclick="multinumbers()">*</button>
+    <button onclick="divinumbers()">/</button>
+    <h3>Result:</h3>
+    <input type="text" id="result" ><br><br>
+    <link rel="stylesheet" href="style.css">
+</div>
+</form>
+    
+    
+    <script>
+        function addNumbers(){
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var sum = num1 + num2;
+            
+            
+            document.getElementById('result').value = sum;
+            
+        }
+        function subnumbers(){ 
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var sub=num1-num2;
+            document.getElementById('result').value = sub;
+        }
+        function multinumbers(){ 
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var multi=num1*num2;
+            document.getElementById('result').value = multi;
+        }
+        function divinumbers(){ 
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            
+                var divi=num1/num2;
+                document.getElementById('result').value = divi;
+        }
+
+    </script>
+</body>
+</html>
